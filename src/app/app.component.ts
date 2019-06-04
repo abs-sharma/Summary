@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular';
+  name = 'JOE';
+
+  isavailable:boolean=false;
+  Variety = ["Invoice", "Taxes", "Budget", "Fiscal"];
+   myClickFunction($event) { 
+      this.isavailable = !this.isavailable;
+      alert("Select Quarter");
+      console.log(event);
+}
 }
